@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio of a Software Engineering student: projects, skills, education and latest updates.">
+<meta name="theme-color" content="#ffffff">
+<title>Portfolio | Software Engineering Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="gh" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+<symbol id="li" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.75 9.75h3.8v1.6h.06c.53-1 1.82-2.06 3.75-2.06 4 0 4.74 2.64 4.74 6.07V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4z"/></symbol>
+<symbol id="ml" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm1.5 2.2V17.5h15V7.2L12 12.6z"/></symbol>
+<symbol id="dl" viewBox="0 0 24 24"><path d="M11 3h2v9.2l3.3-3.3 1.4 1.4L12 16l-5.7-5.7 1.4-1.4L11 12.2zM4 18h16v3H4z"/></symbol>
+<symbol id="us" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.5"/><path d="M3 21c0-4.4 4-7 9-7s9 2.6 9 7z"/></symbol>
+<symbol id="ch" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 012 2v11a2 2 0 01-2 2h-9l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2z"/></symbol>
+</svg>
+
+<div id="prog"></div>
+<header>
+<div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#home"><span class="mono" id="mono">YN</span><span data-bind="name">Name</span></a>
+<div class="links" id="links">
+<a href="#about">About</a><a href="#journey">My Journey</a><a href="#skills">Skills</a><a href="#projects">Work</a><a href="#achievements">Achievements</a><a href="#certifications">Certificates</a><a href="#contact" class="only-m">Contact</a>
+</div>
+<div class="navr"><a class="btn sm navcv" href="#contact">Get in touch ↗</a><button class="icon-btn" id="theme" aria-label="Toggle dark or light mode" title="Toggle theme">◐</button><button class="icon-btn menu" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button></div>
+</nav></div>
+</header>
+
+<main>
+<section id="home"><div class="wrap hero">
+<div>
+<span class="avail"><i></i>Open to ideas, ventures, collaborations, and internships.</span>
+<p class="hi">Nice to meet you, I’m</p>
+<h1 data-bind="name">Name</h1>
+<p class="typed"><span id="typed"></span><span class="caret"></span></p>
+<p class="role" id="role"></p>
+<p class="tag" id="tagline"></p>
+<div class="btns">
+<a class="btn" href="#projects">Explore works ↗</a>
+<a class="btn ghost" href="#contact">Let’s connect</a>
+<div class="social" id="social"></div>
+</div>
+</div>
+<div class="hcard">
+<div class="orbit" aria-hidden="true"></div>
+<div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
+<div class="frame"><div class="photo" id="photo" role="img" aria-label="Profile photo placeholder"><div><svg class="i"><use href="#us"/></svg><br>Add your photo</div></div></div>
+<span class="fb fb1">✳ &lt;/&gt;</span><span class="fb fb2">⌖ <span id="loc"></span></span><span class="fb fb3">Java</span><span class="fb fb4">SQL</span>
+<i class="spark s1" aria-hidden="true">✦</i><i class="spark s2" aria-hidden="true">✦</i>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap reveal">
+<h2>About me</h2>
+<div class="about">
+<div>
+<p class="statement">Practical software, built one project at a time.</p>
+<p id="bio" style="margin:0 0 12px;max-width:62ch"></p>
+<p style="margin:0 0 22px;color:var(--muted)"><strong style="color:var(--ink)">Goal:</strong> <span id="goal"></span></p>
+<a class="btn" id="cv" href="assets/cv.pdf" download><svg class="i" aria-hidden="true"><use href="#dl"/></svg>Download my CV</a>
+</div>
+<div class="info" id="info"></div>
+</div>
+<div class="focus-grid" id="focusGrid"></div>
+</div></section>
+
+<section id="journey" class="alt"><div class="wrap reveal">
+<h2>MY JOURNEY</h2>
+<p class="lead">The latest news and milestones, newest first.</p>
+<div class="filters" id="filters" role="group" aria-label="Filter updates"></div>
+<ol class="timeline" id="timeline"></ol>
+</div></section>
+
+<section id="skills"><div class="wrap reveal">
+<h2>Technical expertise</h2>
+<p class="lead">What I work with, and how comfortable I am with each.</p>
+<div class="sk-grid" id="skillGrid"></div>
+</div></section>
+
+<section id="projects" class="alt"><div class="wrap reveal">
+<h2>Projects</h2>
+<p class="lead">A selection of projects that helped me practice programming, teamwork, and interface development.</p>
+<div class="proj-grid" id="projGrid"></div>
+</div></section>
+
+<section id="achievements"><div class="wrap reveal">
+<h2>Achievements &amp; milestones</h2>
+<p class="lead">Results from my studies and the work I have taken on.</p>
+<div class="facts" id="facts"></div>
+<div class="proj-grid" id="achGrid" style="margin-top:20px"></div>
+</div></section>
+
+<section id="certifications" class="alt"><div class="wrap reveal">
+<h2>Certifications</h2>
+<p class="lead">Short courses I completed to strengthen my fundamentals.</p>
+<div class="proj-grid" id="certGrid"></div>
+<div class="two">
+<div class="card edu"><div class="ring" id="ring"><div><b id="ringVal"></b><small>out of 4.00</small></div></div>
+<div><h3 id="uni" style="font-size:1.4rem;margin-bottom:0"></h3><p id="degree" style="margin:6px 0 0"></p><p id="cgpa" style="margin:2px 0 0"></p><div class="badges" id="course"></div></div></div>
+<div class="card"><h3>Languages &amp; interests</h3><p class="mini">Languages</p><div class="badges" id="langs"></div><p class="mini">Interests</p><div class="badges" id="interests"></div></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+<h2>Get in touch.</h2>
+<p class="lead">Have an idea, a question, or an opportunity? Send a message and I will get back to you soon. I am actively seeking internships and entry-level roles.</p>
+<div class="contact">
+<form id="form">
+<label>Name<input name="n" required autocomplete="name"></label>
+<label>Email<input name="e" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="m" required></textarea></label>
+<button class="btn" type="submit">Send message</button>
+</form>
+<div class="clinks" id="clinks"></div>
+</div>
+</div></section>
+</main>
+
+<footer>
+<div class="wrap fgrid"><div><a class="logo" href="#home"><span class="mono" id="mono2">YN</span><span data-bind="name">Name</span></a><p id="fsub" style="margin:8px 0 0;color:var(--muted)"></p></div>
+<nav class="flinks" id="flinks" aria-label="Footer"></nav><div class="social" id="fsocial"></div></div>
+<div class="wrap fbot"><span>© <span id="yr"></span> <span data-bind="name">Name</span>. All rights reserved.</span><span><a class="btn ghost sm" id="footCv" href="assets/cv.pdf" download>Download CV</a> <a class="btn ghost sm" href="#home">Back to top ↑</a></span></div>
+</footer>
+
+<button id="chatToggle" aria-label="Open chat assistant" aria-expanded="false"><svg class="i"><use href="#ch"/></svg><span>Ask AI</span></button>
+<div id="chat" role="dialog" aria-label="Chat assistant">
+<div class="chat-head"><span>Ask about me</span><span><button id="clear">Clear chat</button> <button id="close" aria-label="Close chat">✕</button></span></div>
+<div id="msgs" aria-live="polite"></div>
+<div class="starters" id="starters"></div>
+<div class="chat-in"><input id="cin" placeholder="Type a question" aria-label="Your question"><button class="btn sm" id="send">Send</button></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
